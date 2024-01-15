@@ -1,5 +1,6 @@
 
 import Foundation
+import MapKit
 struct Theater {
     let type: String
     let location: String
@@ -17,4 +18,18 @@ struct TheaterList {
         Theater(type: "CGV", location: "CGV 영등포", latitude: 37.52666023337906, longitude: 126.9258351013706),
         Theater(type: "CGV", location: "CGV 용산 아이파크몰", latitude: 37.53149302830903, longitude: 126.9654030486416)
     ]
+}
+
+enum TheaterAnnotation {
+    case megaBox
+    case Lotte
+    case CGV
+    
+//    var getAnnotation : [MKPointAnnotation] {
+//        switch self {
+//        case .megaBox :
+//            // Theater.
+//        }
+//    }
+    
 }
