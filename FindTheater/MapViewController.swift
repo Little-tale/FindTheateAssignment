@@ -54,9 +54,7 @@ class MapViewController: UIViewController {
         for item in anotations{
             mapView.addAnnotation(item)
         }
-        
-        
-        
+     
     }
     
     @objc func filterAct(){
@@ -100,5 +98,10 @@ extension MapViewController {
                 print("걸러",i.title!)
             }
         }
+        mapView.removeAnnotations(mapView.annotations)
+        for i in tempAnnotation{
+            mapView.addAnnotation(i)
+        }
+        
     }
 }
